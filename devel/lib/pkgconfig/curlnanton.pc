@@ -1,0 +1,8 @@
+prefix=/home/ros/helloworld_ws/devel
+
+Name: curlnanton
+Description: Description of curlnanton
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/ros/helloworld_ws/devel/lib 
+Requires: 

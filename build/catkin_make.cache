@@ -1,0 +1,2 @@
+ariac_example:iiwa_stack/iiwa_control:iiwa_stack/iiwa_description:iiwa_stack/iiwa_gazebo:iiwa_stack/iiwa_moveit
+-DCATKIN_DEVEL_PREFIX=/home/ros/helloworld_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ros/helloworld_ws/install -G Unix Makefiles

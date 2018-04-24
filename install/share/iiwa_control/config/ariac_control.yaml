@@ -1,0 +1,51 @@
+#iiwa:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+    extra_joints:
+    - name: 'vacuum_gripper_joint'
+      position: 0.0
+  
+  # Trajectory Controllers ---------------------------------------
+  #   
+  # Effort Position Controllers ---------------------------------------
+  arm:
+    type: effort_controllers/JointTrajectoryController
+    joints: 
+      - linear_arm_actuator_joint
+      - iiwa_joint_1
+      - iiwa_joint_2
+      - iiwa_joint_3
+      - iiwa_joint_4
+      - iiwa_joint_5
+      - iiwa_joint_6
+      - iiwa_joint_7
+    constraints:
+      goal_time: 0.6
+      stopped_velocity_tolerance: 0.05
+      linear_arm_actuator_joint: {trajectory: 0.1, goal: 0.1}
+      iiwa_joint_1: {trajectory: 0.1, goal: 0.1}
+      iiwa_joint_3: {trajectory: 0.1, goal: 0.1}
+      iiwa_joint_4: {trajectory: 0.1, goal: 0.1}
+      iiwa_joint_4: {trajectory: 0.1, goal: 0.1}
+      iiwa_joint_5: {trajectory: 0.1, goal: 0.1}
+      iiwa_joint_6: {trajectory: 0.1, goal: 0.1}
+      iiwa_joint_7: {trajectory: 0.1, goal: 0.1}
+      
+    gains:
+      linear_arm_actuator_joint: {p: 10000, d: 500, i: 0, i_clamp: 1}
+      iiwa_joint_1: {p: 5000,  d: 530, i: 25, i_clamp: 60}
+      iiwa_joint_2: {p: 2000,  d: 210, i: 20, i_clamp: 60}
+      iiwa_joint_3: {p: 650,  d: 210, i: 25, i_clamp: 60}
+      iiwa_joint_4: {p: 31,  d: 27, i: 22, i_clamp: 30}
+      iiwa_joint_5: {p: 23,  d: 13, i: 15, i_clamp: 30}
+      iiwa_joint_6: {p: 13,  d: 13, i: 13, i_clamp: 30}
+      iiwa_joint_7: {p: 17,  d: 1, i: 0, i_clamp: 1}
+
+    constraints:
+      goal_time: 0.5                   # Override default
+
+    state_publish_rate:  25            # Override default
+    action_monitor_rate: 30            # Override default
+    stop_trajectory_duration: 0        # Override default

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>curlnanton</name>
+  <version>0.1.0</version>
+  <description>Hey bro, this is our package n shit</description>
+  <maintainer email="dat14cda@student.lu.se">Carl Dahl</maintainer>
+
+  <license>CLOSED</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>osrf_gear</depend>
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>trajectory_msgs</depend>
+
+</package>

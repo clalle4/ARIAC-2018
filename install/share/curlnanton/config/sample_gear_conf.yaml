@@ -1,0 +1,31 @@
+sensors:
+  break_beam_1:
+    type: break_beam
+    pose:
+      xyz: [0.97, 0.61, 0.62]
+      rpy: [0, 0, 'pi']
+  proximity_sensor_1:
+    type: proximity_sensor
+    pose:
+      xyz: [0.185, 2.6, 0.62]
+      rpy: [0, 0, 0]
+  logical_camera_1:
+    type: logical_camera
+    pose:
+      xyz: [-0.54, 1.14, 1.2]
+      rpy: [0, 1.16, 'pi']
+  logical_camera_2:
+    type: logical_camera
+    pose:
+      xyz: [0.58, 2.25, 1.08]
+      rpy: [0, 'pi/2', '-pi/2']
+  depth_camera_1:
+    type: depth_camera
+    pose:
+      xyz: [-0.535, 2.01, 1.2]
+      rpy: [-1.59, 1.07, 'pi']
+  laser_profiler_1:
+    type: laser_profiler
+    pose:
+      xyz: [0.58, 0.94, 1.10]
+      rpy: ['-pi', 'pi/2', 'pi/2']

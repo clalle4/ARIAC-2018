@@ -1,0 +1,8 @@
+prefix=/home/ros/helloworld_ws/devel
+
+Name: iiwa_description
+Description: Description of iiwa_description
+Version: 1.4.0
+Cflags: 
+Libs: -L/home/ros/helloworld_ws/devel/lib 
+Requires: 

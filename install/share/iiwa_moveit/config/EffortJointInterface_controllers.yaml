@@ -1,0 +1,16 @@
+controller_list:
+  - name: "" 
+    action_ns: ariac/arm/follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints: 
+      - linear_arm_actuator_joint
+      - iiwa_joint_1
+      - iiwa_joint_2
+      - iiwa_joint_3
+      - iiwa_joint_4
+      - iiwa_joint_5
+      - iiwa_joint_6
+      - iiwa_joint_7
+      
+      
